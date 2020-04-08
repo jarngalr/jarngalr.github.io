@@ -1,0 +1,129 @@
+/* My First CSS File*/
+nav{ 
+    border: 0px dotted yellow;
+
+}
+
+nav ul{
+    border: 0px dotted red;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+              
+}
+nav li{
+    border: 0px solid rgb(0, 153, 255);
+    display:inline-block;
+    vertical-align: middle;
+           
+}
+
+
+nav a{
+    border: 2px solid #56C6A9;
+    display: block;
+    height: 2.5rem;
+    padding: auto 1rem;
+    border: 1px dotted b;
+    width: 7rem;
+    background-color: #00758F;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    text-align: center;
+}
+
+nav a:hover{
+    background-color: #56C6A9;
+    border: 2px solid #00758F;
+}
+
+nav a:link{
+    color: ivory;
+    font-style: normal;
+
+}
+nav a:visited{
+    color: khaki;
+}
+
+body{
+    font-family: 'Delius', cursive;
+    font-weight: bold;
+    font-style: italic;
+    background-color: #BBE7D6 ;
+    margin-left: 40px;
+    color: rgb(17, 17, 75);
+}
+
+h1{
+    padding: .5rem;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0px solid red;
+    margin: 0 0 1rem 0;
+    padding: 0;
+}
+
+.border{ 
+    padding: 10px;
+    border:3px solid #021a40;
+    background-color: #F2E3B3;
+    }
+.centre{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.centretxt{
+    text-align: center;
+}
+
+p a:visited{
+    color:red;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:link{
+    text-decoration: none;
+}
+
+p a:hover{
+    font-size: 2rem;
+    background-color: white;
+    color: blue;
+    text-decoration: none;
+}
+
+.floatright{
+    float: right;
+    border: 2px solid red;
+    margin:1rem 0rem 1rem 1rem;
+}
+/* TRouBLe */
+.floatleft{
+    float: left;
+    border: 2px solid red;
+    margin:0 1rem 1rem 0 ;
+}
+
+article{
+    border: 2px solid red;
+    width: 30rem;
+    margin: 0 auto;
+}
+article:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Color Theme Swatches in Hex */
+.tableau-couleurs-pastels-1-hex { 
+    color: #F28599; 
+}
+.tableau-couleurs-pastels-2-hex { color: #DDCEF2; }
+.tableau-couleurs-pastels-3-hex { color: #BBE7D6; }
+.tableau-couleurs-pastels-4-hex { color: #F2E3B3; }
+.tableau-couleurs-pastels-5-hex { color: #F2B694; }
