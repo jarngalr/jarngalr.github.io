@@ -40,12 +40,14 @@
 }
 
 body{
+    background-image: url("/images/background.JPG");
     font-family: 'Delius', cursive;
     font-weight: bold;
     font-style: italic;
     background-color: #BBE7D6 ;
     margin-left: 40px;
     color: rgb(17, 17, 75);
+   
 }
 
 h1{
