@@ -40,7 +40,6 @@
 }
 
 body{
-    background-image: url("../images/background.JPG");
     font-family: 'Delius', cursive;
     font-weight: bold;
     font-style: italic;
@@ -122,6 +121,75 @@ article:after{
     list-style-type:none;
     flex-basis: 30%;
     margin: 1rem;
+}
+
+.wrapper {
+    margin: 2rem auto;
+    width: 400px;
+    border: 1rem solid violet;
+    background-color: black;
+    color: white;
+    padding: .3rem;
+}
+.calc-button-row{
+    border: 0px solid blue;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin-bottom: 0.5%;
+}
+
+.calc-buttons{
+    border: solid green 0px;
+}
+.calc-button{
+    border: rgb(158, 129, 129) 1px solid;
+    margin: 0;
+    background-color: #d8d9db;
+    color: black;
+    border:none;
+    font-size: 40px;
+    border: none;
+    height: 100px;
+    flex-basis: 24.5%;
+}
+
+.calc-button:hover {
+    background-color: #ebebeb;
+
+}
+
+.calc-button:active{
+    background-color: #bbbcbe;
+}
+
+
+.screen {
+    text-align: right;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 20px 5px;
+    font-size: 40px;
+}
+
+.double{
+    flex-basis: 49.65%;
+}
+.tripple{
+    flex-basis: 74.8%;
+}
+
+.calc-button:last-child {
+    background-color: #df974c;
+    color: white;
+}
+
+.calc-button:last-child:hover{
+    background-color: #dfb07e;
+
+}
+
+.calc-button:last-child:active{
+    background-color: #dd8d37;
 }
 
 /* Color Theme Swatches in Hex */
