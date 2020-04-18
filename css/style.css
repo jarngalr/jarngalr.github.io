@@ -113,14 +113,18 @@ article:after{
     clear: both;
 }
 .image-row{
+    width: 100%;
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
 }
 
 .image-row li{
     list-style-type:none;
-    flex-basis: 30%;
+}
+.eimg {
+    max-height: 400px;
     margin: 1rem;
 }
 
