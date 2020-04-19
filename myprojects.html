@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>RJ first webpage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/css/swiper.css"/>
     <link href="https://fonts.googleapis.com/css?family=Delius&display=swap" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 
@@ -20,54 +21,95 @@
             <li><a href= "myprojects.html">My projects </a></li>
             <li><a href= "#">Contact Us </a></li>
     </div>
+    <div class="swiper-container">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><!--1st slide-->
+                <div>
+                    <h1 class="centretxt hover">1. Calculator</h1>
     
-    <h1 class="centretxt hover">1. Calculator</h1>
-
-    <div class="wrapper">
-        <section class="screen">
-            0
-
-        </section>
+                    <div class="wrapper">
+                        <section class="screen">
+                            0
     
-        <section class="calc-buttons">
-            <div class="calc-button-row">
-                <button class="calc-button double">C</button>
-                <button class="calc-button">&larr;</button>
-                <button class="calc-button">÷</button>
-    
-            </div>
-            <div class="calc-button-row">
-                <button class="calc-button">7</button>
-                <button class="calc-button">8</button>
-                <button class="calc-button">9</button>
-                <button class="calc-button">×</button>
+                        </section>
+                    
+                        <section class="calc-buttons">
+                            <div class="calc-button-row">
+                                <button class="calc-button double">C</button>
+                                <button class="calc-button">&larr;</button>
+                                <button class="calc-button">÷</button>
+                    
+                            </div>
+                            <div class="calc-button-row">
+                                <button class="calc-button">7</button>
+                                <button class="calc-button">8</button>
+                                <button class="calc-button">9</button>
+                                <button class="calc-button">×</button>
+                                
+                            </div>
+                            <div class="calc-button-row">
+                                <button class="calc-button">4</button>
+                                <button class="calc-button">5</button>
+                                <button class="calc-button">6</button>
+                                <button class="calc-button">-</button>
+                            </div>
+                            <div class="calc-button-row">
+                                <button class="calc-button">1</button>
+                                <button class="calc-button">2</button>
+                                <button class="calc-button">3</button>
+                                <button class="calc-button">+</button>
+                            </div>
+                            <div class="calc-button-row">
+                                <button class="calc-button tripple">0</button>
+                                <button class="calc-button">=</button>
+                            </div>
                 
+                        </section>
+                    </div>
+                </div>
+            
             </div>
-            <div class="calc-button-row">
-                <button class="calc-button">4</button>
-                <button class="calc-button">5</button>
-                <button class="calc-button">6</button>
-                <button class="calc-button">-</button>
+            <div class="swiper-slide"><!--2nd slide-->
+                <div>
+                    <h1 class="centretxt hover">2. Color Box</h1>
+                    <h3 class="centretxt">Type your favourite color below</h3>
+                    <div class="container">
+                        <div class="color-box"></div>
+                        <input class="color-name" placeholder="type color">
+                    </div>
+                </div>
+            
             </div>
-            <div class="calc-button-row">
-                <button class="calc-button">1</button>
-                <button class="calc-button">2</button>
-                <button class="calc-button">3</button>
-                <button class="calc-button">+</button>
-            </div>
-            <div class="calc-button-row">
-                <button class="calc-button tripple">0</button>
-                <button class="calc-button">=</button>
-            </div>
- 
-        </section>
+           
+            
+            ...
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+    
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
     </div>
-    <h1 class="centretxt hover">2. Color Box</h1>
-    <h3 class="centretxt">Type your favourite color below</h3>
-    <div class="container">
-        <div class="color-box"></div>
-        <input class="color-name" placeholder="type color">
-    </div>
+    
+    
+    <script src="https://unpkg.com/popmotion/dist/popmotion.global.min.js"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.js"></script>
+    <script>
+        new Swiper(".swiper-container", {
+            speed: 800,
+            spaceBetween: 100,
+            navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev"
+    }
+        });
+    </script>    
     <script src="./colorbox.js"></script>
     <script src="./calculator.js"></script>
     
