@@ -23,29 +23,41 @@
     display: block;
     height: 2.5rem;
     padding:.5rem 1rem;
-    background-color: #00758F;
+    background-color: #486587;
     text-align: center;
     border-radius: 4px;
+    font-family: 'Freight Sans Bold', Helvetica, Arial, sans-serif !important;
+    font-size: 14px;
+    text-rendering: optimizelegibility;
+    font-weight: 600;
+    letter-spacing: 1.17px;
+    line-height: 20px;
+    margin: 20px 0;
+    padding: 10px 15px;
+    transition: background-color 400ms;
 }
 
 .nav a:hover{
-    background-color: #56C6A9;
+    background-color: #1A3F69;
+    color: white;
 }
 
 .nav a:link{
-    color: ivory;
+    color: white;
     font-style: normal;
 
 }
 .nav a:visited{
-    color: khaki;
+    color: white;
 }
 /* background image has been removed */
 body{
-    font-family: 'Delius', cursive;
-    font-weight: bold;
-    font-style: italic;
-    background-color: #BBE7D6 ;
+    
+    font-family: 'Freight Sans LF Pro Light', Helvetica, Arial, sans-serif !important;
+    text-rendering: optimizelegibility;
+    font-weight: 300;
+    letter-spacing: .01em;
+    background-color: #D1D9E1 ;
     margin-left: 40px;
     color: rgb(17, 17, 75);
    
@@ -130,12 +142,17 @@ article:after{
 }
 
 .wrapper {
+    border-radius: 4px;
     margin: 2rem auto 2rem auto;
     width: 200px;
-    border: 1rem solid slategrey;
+    border: .6rem solid #A3B2C3;
     background-color: black;
     color: white;
     padding: .3rem;
+}
+.wrapper:hover{
+    border-color: #768CA5;
+    transition: border-color 500ms;
 }
 .calc-button-row{
     border: 0px solid blue;
@@ -162,6 +179,7 @@ article:after{
 
 .calc-button:hover {
     background-color: #ebebeb;
+    transition: background-color 500ms;
 
 }
 
@@ -201,14 +219,18 @@ article:after{
     margin: auto auto;
     width: 10rem;
     height: 14rem;
+    text-align: center;
+    border: bold 2px green;
+    width: 100%;
 }
 
 .color-box {
-    width: 10rem;
-    height: 10rem;
+    
+    border-radius: 4px;
+    width: 16rem;
+    height: 16rem;
     background-color: white;
     margin: 2rem auto;
-    text-align: center;
     font-family: 'Courier New', Courier, monospace;
 }
 .color-name {
@@ -223,7 +245,7 @@ article:after{
 .gallary-image{
     display: none;
     max-height: 400px;
-    border-radius: 7px;
+    border-radius: 4px;
     
 }
 .active{
@@ -254,7 +276,7 @@ article:after{
     padding: .2rem 2rem;
     font-size: 1rem;
     border-color: transparent;
-    border-radius: 7px;
+    border-radius: 4px;
     cursor: pointer;
 }
 
@@ -281,17 +303,47 @@ img {
 }
 
 body{
-    padding: 0;
+    padding: auto;
     margin: 0;
 }
 
-.box{
+/* .box{
+    margin: 0 auto;
     cursor: grab;
     text-align: center;
     position: relative;
     z-index: 10;
     border-radius: 50%;
     height: 10rem;
+} */
+.about-content img{
+    float: left;
+    margin: 0 auto;
+    cursor: grab;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+    border-radius: 50%;
+    border: 2px solid #A3B2C3;
+    height: 10rem;
+    margin: 0 1rem 1rem 0;
+    padding: .7rem;
+}
+.about-content img:hover{
+    
+    border-color: #768CA5;
+    transition: border-color 500ms;
+    
+}
+
+.about-content{
+    width: 75%;
+    margin:0 auto 2rem auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 4px;
+    border:  0px solid;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
 }
 
 /* Color Theme Swatches in Hex */
