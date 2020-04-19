@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>RJ first webpage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/css/swiper.css"/>
     <link href="css\style.css" rel="stylesheet">
 
 </head>
@@ -22,32 +23,42 @@
 
     <h1 class="centretxt">A glance of my Everest expedition gallary</h1>
     
-    <section>
-        <div class="image-row">
-            <li> <img src="images/e1.jpg" class="eimg"></li>
-
-            <li><img src="images/e2.jpg" class="eimg"></li>
-
-            <li><img src="images/e3.jpg" class="eimg"></li>
+    <div class="swiper-container">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="./images/e1.jpg" alt="Everest Picture" /></div>
+            <div class="swiper-slide"><img src="./images/e2.jpg" alt="Everest Picture" /></div>
+            <div class="swiper-slide"><img src="./images/e3.jpg" alt="Everest Picture" /></div>
+            <div class="swiper-slide"><img src="./images/e4.jpg" alt="Everest Picture" /></div>
+            <div class="swiper-slide"><img src="./images/e5.jpg" alt="Everest Picture" /></div>
+            <div class="swiper-slide"><img src="./images/e6.jpg" alt="Everest Picture" /></div>
+            <div class="swiper-slide"><img src="./images/e7.jpg" alt="Everest Picture" /></div>
+            <div class="swiper-slide"><img src="./images/e8.jpg" alt="Everest Picture" /></div>
+            <div class="swiper-slide"><img src="./images/e9.jpg" alt="Everest Picture" /></div>
+            ...
         </div>
-
-        <div class="image-row">
-            <li> <img src="images/e4.jpg" class="eimg"></li>
-
-            <li><img src="images/e5.jpg" class="eimg"></li>
-
-            <li><img src="images/e6.jpg" class="eimg"></li>
-        </div>
-<!--
-        <div class="image-row">
-            <li> <img src="images/e7.jpg"></li>
-
-            <li><img src="images/e8.jpg"></li>
-
-            <li><img src="images/e9.jpg"></li>
-        </div>
--->
-    </section>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+    
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+    </div>
+    <script src="https://unpkg.com/swiper/js/swiper.js"></script>
+    <script>
+        new Swiper(".swiper-container", {
+            speed: 800,
+            spaceBetween: 100,
+            navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev"
+    }
+        });
+    </script>
 
 </body>
 </html>

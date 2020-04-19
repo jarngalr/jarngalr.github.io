@@ -2,10 +2,10 @@
 .nav{ 
     display: flex;
     flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
     border: 0px dotted yellow;
-    justify-content:center;
-    margin-bottom: 2rem;
-
+    margin-bottom: 1rem;
 }
 /*ABCD*/
 .nav li{
@@ -263,6 +263,18 @@ article:after{
     background-color: #777;
     cursor: not-allowed;
 }
+
+.swiper-container {
+    width: 1000px;
+    height: 450px;
+}
+.swiper-slide {
+    text-align: center;
+  }
+  
+  img {
+    height: 400px;
+  }
 
 
 /* Color Theme Swatches in Hex */
