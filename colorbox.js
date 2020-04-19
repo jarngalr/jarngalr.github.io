@@ -5,3 +5,4 @@ input.addEventListener('keyup',function(){
     colorbox.style.backgroundColor=input.value;
     colorbox.innerText=input.value;
 });
+

@@ -22,9 +22,7 @@
             <li><a href= "#">Contact Us </a></li>
     </div>
     
-    <div style="text-align: center;">
-        <img src="images/e6.jpg">
-    </div>
+    <img src="./images/10.jpg" alt="Rahul Image" class="box">
 
     <h2>My Fine Hobbies</h2>
    <p>
@@ -50,6 +48,34 @@
 
    <h2>My fine links</h2>
     <p>My favourite website is <a href= "https://www.google.co.in"> Google.</a> </a> But I spend most of my time during office on <a href= "https://reports.ongc.co.in"> ONGC Reports. </a></p>
+    <script src="https://unpkg.com/popmotion/dist/popmotion.global.min.js"></script>   
+    <script>
+        //popmotion physics @ about page
+        //popmotion implimentation
 
+        const { styler, spring, listen, pointer, value } = window.popmotion;
+
+        const ball = document.querySelector('.box');
+        const divStyler = styler(ball);
+        const ballXY = value({ x: 0, y: 0 }, divStyler.set);
+
+        listen(ball, 'mousedown touchstart')
+        .start((e) => {
+            e.preventDefault();
+            pointer(ballXY.get()).start(ballXY);
+        });
+
+        listen(document, 'mouseup touchend')
+        .start(() => {
+            spring({
+            from: ballXY.get(),
+            velocity: ballXY.getVelocity(),
+            to: { x: 0, y: 0 },
+            stiffness: 200,
+            // mass: 1,
+            // damping: 10
+            }).start(ballXY);
+        });
+    </script>
 </body>
 </html>

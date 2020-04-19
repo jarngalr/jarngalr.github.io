@@ -22,3 +22,4 @@ nextBtn.addEventListener('click', function(){
         nextBtn.disabled=true;
     }
 });
+
