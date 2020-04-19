@@ -6,6 +6,7 @@
     align-items: center;
     border: 0px dotted yellow;
     margin-bottom: 1rem;
+    width: 100%;
 }
 /*ABCD*/
 .nav li{
