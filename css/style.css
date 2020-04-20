@@ -278,11 +278,11 @@ article:after{
     font-family: 'Courier New', Courier, monospace;
 }
 
-.image-gallary img{
+.gallary-image{
     display: none;
     max-height: 400px;
-    width: auto;
     border-radius: 4px;
+    max-width: 90%;
 }
 .active{
     display: block;
@@ -329,15 +329,18 @@ article:after{
     width: 80%;
     margin: 0 auto;
     height: 450px;
+    vertical-align: center;
 }
 .swiper-slide {
     text-align: center;
+    vertical-align: center;
 }
   
 .swiper-container img {
     max-height: 400px;
-    width: auto;
+    max-width: 98%;
     margin: 1rem;
+    margin: auto;
 }
 
 body{
