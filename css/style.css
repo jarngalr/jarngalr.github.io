@@ -349,7 +349,7 @@ article:after{
 
 }
   
-.swiper-container img {
+.everest-img {
     max-height: 400px;
     max-width: 100%;
     margin: 1rem;
@@ -426,6 +426,7 @@ body{
 }
 
 .dog-img{
+    /* height: 350px; */
     max-height: 350px;
     width: auto;
     display: none;
