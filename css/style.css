@@ -64,16 +64,15 @@
 .nav-bottom li{
     padding: 0;
     list-style-type:none;
-    flex-basis: 5%;
-           
+    flex-basis: 5%;           
 }
 
 
 .nav-bottom a{
     display: block;
-    padding:.5rem 1rem;
+    margin:1.5rem 1rem;
     text-align: center;
-    border: none
+    border: none;
 }
 
 .nav-bottom a:hover{
@@ -86,6 +85,11 @@
 }
 .nav-bottom a:visited{
     border: none;
+}
+
+.nav-bottom img{
+    height: 2rem ;
+    width: 2rem ;
 }
 /* background image has been removed */
 body{
@@ -176,7 +180,10 @@ article:after{
 .image-row li{
     list-style-type:none;
 }
-
+.calculator-container{
+    width: 100%;
+    height: 100%;
+}
 .wrapper {
     border-radius: 4px;
     margin: 2rem auto 2rem auto;
@@ -259,7 +266,10 @@ article:after{
     border: bold 2px green;
     width: 100%;
 }
-
+.color-box-container{
+    width: 100%;
+    height: 100%;
+}
 .color-box {
     
     border-radius: 4px;
@@ -272,7 +282,7 @@ article:after{
 .color-name {
     display: block;
     margin: 1rem auto;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     width:10rem;
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
@@ -294,11 +304,10 @@ article:after{
     justify-content: center;
     align-items: center;
     height: 400px;
-    margin-bottom: 1rem;
-
 }
 
 .btns{
+    margin-top: 1rem;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -326,19 +335,23 @@ article:after{
 }
 
 .swiper-container {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     height: 450px;
     vertical-align: center;
 }
 .swiper-slide {
-    text-align: center;
-    vertical-align: center;
+    display: flex;
+    /* text-align: center;
+    vertical-align: center; */
+    align-items: center;
+    justify-content: center;
+
 }
   
 .swiper-container img {
     max-height: 400px;
-    max-width: 98%;
+    max-width: 100%;
     margin: 1rem;
     margin: auto;
 }
@@ -381,7 +394,7 @@ body{
 
 .about-content{
     width: 75%;
-    margin:0 auto 2rem auto;
+    margin:0 auto 1rem auto;
     padding: 2rem;
     background-color: #fff;
     border-radius: 4px;
