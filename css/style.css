@@ -259,6 +259,10 @@ article:after{
     background-color: #dd8d37;
 }
 .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column nowrap;
     margin: auto auto;
     width: 16rem;
     height: 22rem;
@@ -444,6 +448,146 @@ body{
     width:10rem;
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
+}
+
+@keyframes change {
+    0%   {background: red;}
+    10%  {background: green;}
+    20%  {background: blue;}
+    30%  { background: yellow;}
+    40% {background: crimson;}
+    50%   {background: red;}
+    60%  {background: green;}
+    70%  {background: blue;}
+    80%  { background: yellow;}
+    90% {background: brown;}
+    100%{background: crimson;}
+}
+
+.background{
+    height:1080px ;
+    width:1920px ;
+    background-image: url(../images/background.png);
+    background-repeat: no-repeat;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:center;
+    margin: auto;
+    cursor: url(../images/cursor.png), auto;
+}
+
+.win-box{
+    display: none;
+    z-index: 8;
+    margin: auto;
+}
+
+.worm-box{
+    display: flex;
+    align-items: center;
+    flex-flow: column nowrap;
+    width: 100%;
+    text-align: center;
+}
+
+
+.worm{
+    text-align: left;
+    width: 1660px;
+    overflow: hidden;
+    transition: width 0.5s ease-in-out;
+}
+
+.score-box{
+    width: 30rem;
+    height: 10rem;
+    margin-bottom: -11rem;
+    margin-top: 1rem;
+    background-color: transparent;
+    z-index: 10;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+}
+
+.worm-img{
+    width: 1660px;
+}
+
+.mole-box{
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+    background-color: black;
+    flex-basis: 14%;
+    margin:.5% 4%;
+    border: 2px solid red;
+}
+
+.mole-img{
+    display: block;
+    height: 105%;
+    width: 105%;
+    display: none;
+}
+
+.show-hungry{
+    display: block;
+    cursor: url(../images/cursor-worm.png),auto;
+}
+
+.show{
+    display: block;
+    /* cursor: url(./cursor-worm.png), auto; */
+}
+
+
+
+.button-container{
+    width: 100%;
+    text-align: center;
+    z-index: 9;
+}
+
+.start-button{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    color: blanchedalmond;
+    background-color: crimson;
+    margin: auto;
+}
+
+.nav a{
+    display: block;
+    height: 2.5rem;
+    padding:.5rem 1rem;
+    text-align: center;
+    border-radius: 4px;
+    font-family: 'Freight Sans Bold', Helvetica, Arial, sans-serif !important;
+    font-size: 14px;
+    text-rendering: optimizelegibility;
+    font-weight: 600;
+    letter-spacing: 1.17px;
+    line-height: 20px;
+    margin: 20px 0;
+    padding: 10px 15px;
+    transition: background-color 400ms;
+}
+
+.start-button a:hover{
+    color: white;
+}
+
+.start-button a:link{
+    color: white;
+    font-style: normal;
+
+}
+.start-button a:visited{
+    color: white;
 }
 
 /* Color Theme Swatches in Hex */
