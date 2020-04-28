@@ -533,7 +533,7 @@ body{
     width: 105%;
     display: none;
 }
-.show{
+.show-mole{
     display: block;
     cursor: url(../images/cursor.png), auto;
 }

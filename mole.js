@@ -36,7 +36,7 @@ Score= ${points}`;
 function clickHandler (event){
     event.target.removeEventListener("click", clickHandler);
     event.currentTarget.classList.remove("show-hungry");
-    event.target.classList.add("show");
+    event.target.classList.add("show-mole");
     
     if(points<97){
         points=points+3;
@@ -60,7 +60,7 @@ function callHungry(imageH){
 
     setTimeout(() => {
         imageH.removeEventListener("click", clickHandler);
-        imageH.classList.add("show");
+        imageH.classList.add("show-mole");
         imageH.classList.remove("show-hungry");
         if(imageH.src!="./images/mole-fed.png"){
             callSad(imageH);
@@ -115,7 +115,7 @@ function callLeaving(imageL){
 function clickHandlerK (event){
     event.target.removeEventListener("click", clickHandlerK);
     event.target.classList.remove("show-hungry");
-    event.target.classList.add("show");
+    event.target.classList.add("show-mole");
       
     if(points<94){
         points=points+6;
@@ -138,7 +138,7 @@ function callKingHungry(imageKH){
     setTimeout(() => {
         imageKH.removeEventListener("click", clickHandlerK);
         imageKH.classList.remove("show-hungry");
-        imageKH.classList.add("show");
+        imageKH.classList.add("show-mole");
         if(imageKH.src!="./images/king-mole-fed.png"){
             callKingSad(imageKH);
         }
