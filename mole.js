@@ -60,7 +60,7 @@ function callHungry(imageH){
 
     setTimeout(() => {
         
-        if(imageH.classList.contains("show-hungry"){
+        if(imageH.classList.contains("show-hungry")){
             imageH.removeEventListener("click", clickHandler);
             imageH.classList.add("show-mole");
             imageH.classList.remove("show-hungry");
@@ -138,7 +138,7 @@ function callKingHungry(imageKH){
 
     setTimeout(() => {
         
-        if(imageKH.classList.contains("show-hungry"){
+        if(imageKH.classList.contains("show-hungry")){
             imageKH.removeEventListener("click", clickHandlerK);
             imageKH.classList.remove("show-hungry");
             imageKH.classList.add("show-mole");
