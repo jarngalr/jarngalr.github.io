@@ -59,10 +59,11 @@ function callHungry(imageH){
         imageH.addEventListener("click", clickHandler)
 
     setTimeout(() => {
-        imageH.removeEventListener("click", clickHandler);
-        imageH.classList.add("show-mole");
-        imageH.classList.remove("show-hungry");
-        if(imageH.src==="./images/mole-hungry.png"){
+        
+        if(imageH.classList.contains("show-hungry"){
+            imageH.removeEventListener("click", clickHandler);
+            imageH.classList.add("show-mole");
+            imageH.classList.remove("show-hungry");
             callSad(imageH);
             return;
         }
@@ -136,10 +137,11 @@ function callKingHungry(imageKH){
         imageKH.addEventListener("click", clickHandlerK)
 
     setTimeout(() => {
-        imageKH.removeEventListener("click", clickHandlerK);
-        imageKH.classList.remove("show-hungry");
-        imageKH.classList.add("show-mole");
-        if(imageKH.src==="./images/king-mole-hungry.png"){
+        
+        if(imageKH.classList.contains("show-hungry"){
+            imageKH.removeEventListener("click", clickHandlerK);
+            imageKH.classList.remove("show-hungry");
+            imageKH.classList.add("show-mole");
             callKingSad(imageKH);
         }
     }, 2000);
