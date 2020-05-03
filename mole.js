@@ -62,7 +62,7 @@ function callHungry(imageH){
         imageH.removeEventListener("click", clickHandler);
         imageH.classList.add("show-mole");
         imageH.classList.remove("show-hungry");
-        if(imageH.src!="./images/mole-fed.png"){
+        if(imageH.src==="./images/mole-hungry.png"){
             callSad(imageH);
             return;
         }
