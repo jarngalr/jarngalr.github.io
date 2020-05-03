@@ -139,7 +139,7 @@ function callKingHungry(imageKH){
         imageKH.removeEventListener("click", clickHandlerK);
         imageKH.classList.remove("show-hungry");
         imageKH.classList.add("show-mole");
-        if(imageKH.src!="./images/king-mole-fed.png"){
+        if(imageKH.src==="./images/king-mole-hungry.png"){
             callKingSad(imageKH);
         }
     }, 2000);
