@@ -54,7 +54,7 @@ function callHungry(imageH){
     imageH.style.display="block";
     imageH.src="./images/mole-hungry.png";
     imageH.classList.add("show-hungry");
-    console.log("Hungry mole Called", Math.floor(Date.now()/1000))
+//     console.log("Hungry mole Called", Math.floor(Date.now()/1000))
 
         imageH.addEventListener("click", clickHandler)
 
@@ -72,7 +72,7 @@ function callHungry(imageH){
 
 function callFed(imageF){
     imageF.src="./images/mole-fed.png";
-    console.log("Fed mole called", Math.floor(Date.now()/1000))
+//     console.log("Fed mole called", Math.floor(Date.now()/1000))
 
     setTimeout(() => {
         callLeaving(imageF);
@@ -81,7 +81,7 @@ function callFed(imageF){
 
 function callSad(imageS){
     imageS.src="./images/mole-sad.png"
-    console.log("Sad mole called", Math.floor(Date.now()/1000));
+//     console.log("Sad mole called", Math.floor(Date.now()/1000));
 
     setTimeout(() => {        
         callLeaving(imageS);
@@ -90,7 +90,7 @@ function callSad(imageS){
 }
 
 function callLeaving(imageL){
-    console.log("Leaving mole called", Math.floor(Date.now()/1000))
+//     console.log("Leaving mole called", Math.floor(Date.now()/1000))
     imageL.src="./images/mole-leaving.png"
 
     setTimeout(() => {
@@ -131,7 +131,7 @@ function callKingHungry(imageKH){
     imageKH.style.display="block";
     imageKH.src="./images/king-mole-hungry.png";
     imageKH.classList.add("show-hungry");
-    console.log("Hungry King Mole Called", Math.floor(Date.now()/1000))
+//     console.log("Hungry King Mole Called", Math.floor(Date.now()/1000))
 
         imageKH.addEventListener("click", clickHandlerK)
 
@@ -147,7 +147,7 @@ function callKingHungry(imageKH){
 
 function callKingFed(imageKF){
     imageKF.src="./images/king-mole-fed.png";
-    console.log("Fed King Mole called", Math.floor(Date.now()/1000));
+//     console.log("Fed King Mole called", Math.floor(Date.now()/1000));
 
     setTimeout(() => {
         callKingLeaving(imageKF);
@@ -156,7 +156,7 @@ function callKingFed(imageKF){
 
 function callKingSad(imageKS){
     imageKS.src="./images/king-mole-sad.png"
-    console.log("Sad King mole called", Math.floor(Date.now()/1000))
+//     console.log("Sad King mole called", Math.floor(Date.now()/1000))
     setTimeout(() => {
         callKingLeaving(imageKS);
     }, 500);
@@ -164,7 +164,7 @@ function callKingSad(imageKS){
 }
 
 function callKingLeaving(imageKL){
-    console.log("Leaving King mole called", Math.floor(Date.now()/1000))
+//     console.log("Leaving King mole called", Math.floor(Date.now()/1000))
     imageKL.src="./images/king-mole-leaving.png"
     
     setTimeout(() => {
