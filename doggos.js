@@ -40,7 +40,7 @@ fetch(BREEDS_URL)
       select.appendChild(option);
     for(let i=1; i<=breedsArray.length; i++){
       const option=document.createElement("option");
-      option.value=breedsArray[i-1];
+      option.value=breedsArray[i];
       option.innerText=breedsArray[i];
       select.appendChild(option);
     }
