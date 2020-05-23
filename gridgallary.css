@@ -17,13 +17,39 @@ header{
 header h1{
     margin-left: 3%;
 }
-header ul{
-    display: flex;
-    justify-content: flex-end;
-    /* border: 2px white solid; */
-    flex-flow: row wrap;
+
+header img{
     margin-right: 3%;
 }
+header ul{
+    display: flex;
+    justify-self: flex-end;
+    align-self: flex-end;
+    /* border: 2px white solid; */
+    flex-flow: column nowrap;
+    margin-right: 3%;
+}
+
+.main-header{
+    justify-content: flex-end;
+    background-color: #3D61A6;
+    display: none;
+}
+
+.mobile-bar{
+    /* border-bottom: 1px solid black; */
+    width: 100%;
+}
+
+.nav-button:hover{
+    cursor: pointer;
+
+}
+
+.toggle{
+    display: none;
+}
+
 header li{
     list-style-type: none;
 }
@@ -51,6 +77,7 @@ header a{
     display: flex;
     justify-content: center;
     list-style-type: none;
+    flex-flow: row wrap;
 }
 
 .nav-bottom li{
@@ -58,6 +85,7 @@ header a{
 }
 
 @media (min-width:600px){
+    
     .gallary{
         grid-template-columns: 1fr 1fr 1fr;
     }
@@ -118,6 +146,26 @@ header a{
     
 
 @media (min-width:900px){
+    .main-header{
+        justify-content: space-between;
+        background-color: #2D61A6;
+        display: flex;
+    }
+    .toggle{
+        display: block;
+    }
+    .mobile-bar{
+        display: none;
+    }
+
+    header ul{
+        display: flex;
+        justify-content: flex-end;
+        /* border: 2px white solid; */
+        flex-flow: row wrap;
+        margin-right: 3%;
+    }
+
     .gallary{
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
