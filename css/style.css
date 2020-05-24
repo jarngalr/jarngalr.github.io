@@ -7,6 +7,7 @@ header{
     background-color: #2D61A6;
     color: white;
 }
+
 header h1{
     margin: 1rem 3%;
 }
@@ -52,14 +53,10 @@ header li{
     font-family: 'Freight Sans Bold', Helvetica, Arial, sans-serif !important;
     font-size: 14px;
     text-rendering: optimizelegibility;
-    font-weight: 600;
+    font-weight:550;
     letter-spacing: 1.17px;
     line-height: 20px;
     width: max-content;
-}
-
-.nav a:hover{
-    color: white;
 }
 
 .nav a:link{
@@ -69,6 +66,10 @@ header li{
 }
 .nav a:visited{
     color: white;
+}
+
+.nav a:hover{
+    color:#BBE7D6;;
 }
 
 /*bottom navigation bar*/
@@ -160,7 +161,7 @@ p a:visited{
 
 a:link{
     text-decoration: none;
-    font-weight: bolder;
+    /* font-weight: bolder; */
 }
 
 p a:hover{
@@ -419,7 +420,7 @@ body{
 
 .about-content{
     width: 75%;
-    margin:0 auto 1rem auto;
+    margin:2% auto 0 auto;
     padding: 2rem;
     background-color: #fff;
     border-radius: 4px;
