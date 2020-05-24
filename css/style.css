@@ -1,43 +1,64 @@
 /* My First CSS File*/
-
-.nav{ 
+header{
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;    
+    justify-content: space-between;
     align-items: center;
-    border: 0px dotted yellow;
-    margin-bottom: 1rem;
-    padding-top: 3px;
+    height: 5%;
+    background-color: #2D61A6;
+    color: white;
 }
-/*ABCD*/
-.nav li{
-    padding: 0;
-    list-style-type:none;
-    flex-basis: 10%;
-           
+header h1{
+    margin: 1.5% 3%;
 }
 
+header img{
+    margin-right: 3%;
+}
+header ul{
+    display: flex;
+    flex-flow: column nowrap;
+    margin-right: 3%;
+}
+
+.main-header{
+    justify-content: flex-end;
+    background-color: #3D61A6;
+    display: none;
+}
+
+.mobile-bar{
+    /* border-bottom: 1px solid black; */
+}
+
+.nav-button:hover{
+    cursor: pointer;
+
+}
+
+.toggle{
+    display: none;
+}
+
+header li{
+    list-style-type: none;
+}
 
 .nav a{
+    text-decoration: none;
+    color:white;
     display: block;
-    height: 2.5rem;
-    padding:.5rem 1rem;
-    background-color: #486587;
+    margin-left: 2em;
     text-align: center;
-    border-radius: 4px;
     font-family: 'Freight Sans Bold', Helvetica, Arial, sans-serif !important;
     font-size: 14px;
     text-rendering: optimizelegibility;
     font-weight: 600;
     letter-spacing: 1.17px;
     line-height: 20px;
-    margin: 20px 0;
-    padding: 10px 15px;
-    transition: background-color 400ms;
+    width: max-content;
 }
 
 .nav a:hover{
-    background-color: #1A3F69;
     color: white;
 }
 
@@ -559,21 +580,26 @@ body{
     margin: auto;
 }
 
-.nav a{
-    display: block;
-    height: 2.5rem;
-    padding:.5rem 1rem;
-    text-align: center;
-    border-radius: 4px;
-    font-family: 'Freight Sans Bold', Helvetica, Arial, sans-serif !important;
-    font-size: 14px;
-    text-rendering: optimizelegibility;
-    font-weight: 600;
-    letter-spacing: 1.17px;
-    line-height: 20px;
-    margin: 20px 0;
-    padding: 10px 15px;
-    transition: background-color 400ms;
+@media (min-width:900px){
+    .main-header{
+        justify-content: space-between;
+        background-color: #2D61A6;
+        display: flex;
+    }
+    .toggle{
+        display: block;
+    }
+    .mobile-bar{
+        display: none;
+    }
+
+    header ul{
+        display: flex;
+        justify-content: flex-end;
+        /* border: 2px white solid; */
+        flex-flow: row wrap;
+        margin-right: 3%;
+    }
 }
 
 .start-button a:hover{
