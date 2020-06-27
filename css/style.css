@@ -513,6 +513,7 @@ body{
     flex-flow: column nowrap;
     width: 100%;
     text-align: center;
+    max-height: 10vh;
 }
 
 
@@ -521,6 +522,7 @@ body{
     text-align: left;
     width: 1660px;
     max-width: 90vw;
+    max-height: 10vh;
     overflow: hidden;
     transition: width 0.5s ease-in-out;
 }
@@ -540,12 +542,15 @@ body{
 .worm-img{
     width: 1660px;
     max-width: 90vw;
+    max-height: 10vh;
 }
 
 .mole-box{
     border-radius: 50%;
     height: 250px;
+    max-height: 20vh;
     width: 250px;
+    max-width: 20vh;
     background-color: black;
     flex-basis: 14%;
     margin:.5% 4%;
