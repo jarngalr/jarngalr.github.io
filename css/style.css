@@ -489,7 +489,7 @@ body{
 .background{
     height:1080px ;
     max-height: 100vh;
-    width:auto;
+    width:177vh;
     background-image: url(../images/background.png);
     background-repeat: no-repeat;
     display: flex;
@@ -506,11 +506,11 @@ body{
 }
 
 .worm-box{
-    margin: auto;
+    margin: 0 auto;
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex-flow: column nowrap;
+    justify-content: flex-start;
+/*     flex-flow: column nowrap; */
     width: 100%;
     text-align: center;
     max-height: 10vh;
@@ -548,9 +548,9 @@ body{
 .mole-box{
     border-radius: 50%;
     height: 250px;
-    max-height: 20vh;
+    max-height: 25vh;
     width: 250px;
-    max-width: 20vh;
+    max-width: 25vh;
     background-color: black;
     flex-basis: 14%;
     margin:.5% 4%;
@@ -581,9 +581,9 @@ body{
 .start-button{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    font-size: 2rem;
-    padding: 1rem 2rem;
-    border-radius: 10px;
+    font-size: 2.5vh;
+    padding: 1vh 2vh;
+    border-radius: 1vh;
     color: blanchedalmond;
     background-color: crimson;
     margin: auto;
