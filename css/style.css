@@ -487,8 +487,8 @@ body{
 }
 
 .background{
-    height:1080px ;
-    width:1920px ;
+    height:48vw ;
+    width:100vw;
     background-image: url(../images/background.png);
     background-repeat: no-repeat;
     display: flex;
@@ -505,29 +505,30 @@ body{
 }
 
 .worm-box{
-    margin: auto;
+    margin: 0 auto;
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex-flow: column nowrap;
-    width: 100%;
-    text-align: center;
+    justify-content: flex-start;
+    width: 90%;
+    max-height: 6%;
 }
 
 
 .worm{
-    max-width: 1660px;
+    
     text-align: left;
     width: 1660px;
+    max-width: 100%;
+/*     max-height: 5%; */
     overflow: hidden;
     transition: width 0.5s ease-in-out;
 }
 
 .score-box{
-    width: 30rem;
-    height: 10rem;
-    margin-bottom: -11rem;
-    margin-top: 1rem;
+    width: 20%;
+    height: 10%;
+    margin-bottom: -11%;
+    margin-top: 1%;
     background-color: transparent;
     z-index: 10;
     border-radius: 10px;
@@ -537,14 +538,16 @@ body{
 
 .worm-img{
     width: 1660px;
+    max-width: 100%;
+    max-height: 5%;
 }
 
 .mole-box{
     border-radius: 50%;
-    height: 250px;
-    width: 250px;
+    height: 21%;
+    width: 14%;
     background-color: black;
-    flex-basis: 14%;
+/*     flex-basis: 14%; */
     margin:.5% 4%;
     border: 2px solid red;
 }
@@ -573,8 +576,8 @@ body{
 .start-button{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    font-size: 2rem;
-    padding: 1rem 2rem;
+    font-size: 2.5%;
+    padding: 1% 2%;
     border-radius: 10px;
     color: blanchedalmond;
     background-color: crimson;
@@ -624,3 +627,4 @@ body{
 .tableau-couleurs-pastels-3-hex { color: #BBE7D6; }
 .tableau-couleurs-pastels-4-hex { color: #F2E3B3; }
 .tableau-couleurs-pastels-5-hex { color: #F2B694; }
+
